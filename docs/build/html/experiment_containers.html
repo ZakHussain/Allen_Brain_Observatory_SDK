@@ -10,7 +10,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Intro To Experiment Containers &mdash; Brain Observatory SDK 1.0 documentation</title>
+  <title>Intro To Experiment Containers &mdash; Brain Observatory 1.0 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
 
   
-    <link rel="stylesheet" href="nstatic/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   
 
   
@@ -41,7 +41,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Brain Observatory SDK 1.0 documentation" href="index.html"/>
+    <link rel="top" title="Brain Observatory 1.0 documentation" href="index.html"/>
         <link rel="prev" title="Documentation" href="sdk_documentation.html"/> 
 
   
@@ -61,7 +61,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Brain Observatory SDK
+            <a href="index.html" class="icon icon-home"> Brain Observatory
           
 
           
@@ -122,7 +122,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Brain Observatory SDK</a>
+          <a href="index.html">Brain Observatory</a>
         
       </nav>
 
@@ -390,8 +390,8 @@ to read</p>
 <span></span>In [1]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">allensdk.core.brain_observatory_cache</span> <span class="kn">import</span> <span class="n">BrainObservatoryCache</span>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">allensdk.core.brain_observatory_cache</span> <span class="k">import</span> <span class="n">BrainObservatoryCache</span>
 <span class="kn">import</span> <span class="nn">pprint</span>
 </pre></div>
 </div>
@@ -406,7 +406,7 @@ to read</p>
 <span></span>In [2]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span><span class="n">boc</span> <span class="o">=</span> <span class="n">BrainObservatoryCache</span><span class="p">(</span><span class="n">manifest_file</span><span class="o">=</span><span class="s1">&#39;boc/manifest.json&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -421,7 +421,7 @@ to read</p>
 <span></span>In [3]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span><span class="n">all_experiment_containers</span> <span class="o">=</span> <span class="n">boc</span><span class="o">.</span><span class="n">get_experiment_containers</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -436,7 +436,7 @@ Container</strong></p>
 <span></span>In [4]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span><span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">all_experiment_containers</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2252,7 +2252,7 @@ assign it to the first <strong>Experiment Container</strong> within
 <span></span>In [5]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span><span class="n">experiment_container_one</span> <span class="o">=</span> <span class="n">all_experiment_containers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
@@ -2266,7 +2266,7 @@ assign it to the first <strong>Experiment Container</strong> within
 <span></span>In [6]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span><span class="n">pprint</span><span class="o">.</span><span class="n">pprint</span><span class="p">(</span><span class="n">experiment_container_one</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -2295,10 +2295,10 @@ corresponding value by using <em>experiment_container_one [‘key’]</em>.</p>
 <span></span>In [7]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2"><div class="highlight"><pre>
-<span></span><span class="k">print</span><span class="p">(</span><span class="n">experiment_container_one</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">experiment_container_one</span><span class="p">[</span><span class="s1">&#39;cre_line&#39;</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="n">experiment_container_one</span><span class="p">[</span><span class="s1">&#39;specimen_name&#39;</span><span class="p">])</span>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">experiment_container_one</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">experiment_container_one</span><span class="p">[</span><span class="s1">&#39;cre_line&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">experiment_container_one</span><span class="p">[</span><span class="s1">&#39;specimen_name&#39;</span><span class="p">])</span>
 <span class="c1">#1 Can you print the value for the key, &#39;donor_name&#39;</span>
 <span class="c1">#2 Can you print the vlaue for the key, &#39;imaging_depth&#39; field</span>
 <span class="c1">#3 Can you print the value for the key, &#39;targeted_structure&#39; field</span>
@@ -2333,10 +2333,10 @@ will take care of finding these specific <strong>Experiment Containers</strong>!
 <span></span>In [8]:
 </pre></div>
 </div>
-<div class="input_area highlight-ipython2"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span><span class="n">specific_experiment_containers</span> <span class="o">=</span> <span class="n">boc</span><span class="o">.</span><span class="n">get_experiment_containers</span><span class="p">(</span><span class="n">targeted_structures</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;VISp&#39;</span><span class="p">,</span><span class="s1">&#39;VISam&#39;</span><span class="p">],</span> <span class="n">imaging_depths</span><span class="o">=</span><span class="p">[</span><span class="mi">275</span><span class="p">],</span>
                                                               <span class="n">transgenic_lines</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Cux2-CreERT2&#39;</span><span class="p">])</span>
-<span class="k">print</span><span class="p">(</span><span class="s2">&quot;there are </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">specific_experiment_containers</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; Experiment Containers matching this criteria&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;there are </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">specific_experiment_containers</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; Experiment Containers matching this criteria&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

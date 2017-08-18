@@ -1,4 +1,4 @@
-Welcome to the Brain Observatory SDK's Documentation!
+Welcome to the Brain Observatory Documentation!
 =====================================================
 
 Guide
